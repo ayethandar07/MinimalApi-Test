@@ -1,0 +1,31 @@
+﻿@MinimalApiTest_HostAddress = https://localhost:7034
+
+GET {{MinimalApiTest_HostAddress}}/products
+
+###
+
+GET {{MinimalApiTest_HostAddress}}/
+
+###
+
+GET {{MinimalApiTest_HostAddress}}/products/{id}
+
+###
+
+POST {{MinimalApiTest_HostAddress}}/products
+
+###
+
+PUT {{MinimalApiTest_HostAddress}}/products/2
+Content-type: application/json
+{
+    "id": 2,
+    "name": "Smartphone1",
+    "price": 499.99
+}
+
+###
+
+DELETE {{MinimalApiTest_HostAddress}}/products/{id}
+
+###
